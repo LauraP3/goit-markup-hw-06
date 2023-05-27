@@ -363,6 +363,17 @@
               </div>
             </div>
           </div>
+          <form class="subscription-form" name="news_subscription">
+            <label class="subsciption-field">
+              <span class="subscription-form-title">Subscribe to the newsletter</span>
+              <input class="field" type="email" name="subscriber" placeholder="E-mail"> 
+            </label class="subsciption-field">
+            <button class="btn-subscribe" type="submit">Subscribe 
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="/Icons/symbol-defs.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </footer>
     </div>
@@ -371,8 +382,44 @@
     <div  class="modal is-hidden" data-modal>
       <div class="modal-content">
         <button data-modal-close class="close-btn">
-          <img width="11" height="11" src="/images/close_btn.png" alt="x">
+          <svg width="11" height="11">
+            <use href="/Icons/symbol-defs.svg#icon-close_btn"></use>
         </button>
+        <form class="mdl-form">
+          <div role="group" aria-labelledby="modal-form" class="modal-form">
+            <p class="form-title" id="modal-form">Leave your information and we'll call you back</p>
+            <label class="form-field">
+              Name
+              <input class="insert area" type="text" name="full name" minlength="3" maxlength="50"/>
+              <svg class="form-icon" width="12" height="12">
+                <use href="/Icons/symbol-defs.svg#icon-person-black-18dp-1"></use>
+              </svg>
+            </label>
+            <label class="form-field">
+              Telephone
+              <input class="insert area" type="tel" name="telephone" minlength="6" maxlength="15">
+              <svg class="form-icon" width="13" height="13">
+                <use href="/Icons/symbol-defs.svg#icon-phone_form"></use>
+              </svg>
+            </label>
+            <label class="form-field">
+              E-mail
+              <input class="insert area" type="email" name="email" minlength="3" maxlength="50">
+              <svg class="form-icon" width="15" height="12">
+                <use href="/Icons/symbol-defs.svg#icon-emai_form""></use>
+              </svg>
+            </label>
+            <label class="form-field">
+              Comments
+              <textarea class="insert text" name="comments" rows="5" placeholder="Enter the text"></textarea>
+            </label>
+            <label class="form-field checkbox" >
+              <input class="insert check" type="checkbox" name="terms and conditions" required>
+              I agree with the letter and accept the&nbsp;<a class="terms" href="">Terms and Conditions</a>
+            </label>
+            <button type="submit" class="btn-submit">Send</button>
+          </div>
+        </form>
     </div>
     <script src="js/modal.js"></script>
   </body>
